@@ -1,0 +1,122 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: var(--base-font);
+    font-size: 62.5%;
+    color: var(--dark-solid);
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--spacing-68);
+}
+
+#shop_search{
+    width: 367px;
+    font-weight: 500;
+}
+
+
+#shop_articles > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.shop_li{
+    margin-left: 2.5em;
+}
+
+
+.shop_img{
+    width: 300px; 
+    height: auto;
+}
+
+.shop_item{
+    height: 51em;
+    width: 30em;
+    position: relative;
+}
+
+.search_title{
+    font-size: var(--font-large);
+}
+
+.search_input{
+    margin-bottom: var(--spacing-36);
+}
+
+.lg_input{
+    width: 243px;
+    height: 44px;
+    border-radius: 6px;
+}
+
+.min-max{
+    width: 59px;
+
+    border: solid 2px;
+    border-radius: 6px;
+    margin-right: var(--spacing-12);
+}
+
+.min_max_label{
+    font-size: var(--font-small);
+    margin-right: var(--spacing-12);
+
+}
+
+#search_filter{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+/*funkos*/
+
+.shop_item_info{
+    margin-bottom: var(--spacing-12);
+}
+
+.funko_saga{
+    font-size: 14px;
+}
+
+.funko_name{
+    font-size: 18px;
+}
+
+.funko_price{
+    font-size: 16px;
+}
+
+.funko_payment{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--secondary-solid);
+}
+
+#box_new{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--primary-solid);
+    width: 96px;
+    height: 30px;
+    font-size: var(--font-small);
+    color: var(--light-font-solid);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
