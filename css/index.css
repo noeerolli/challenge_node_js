@@ -261,16 +261,23 @@ h4{
 #ul_new{
    display: flex;
 }
+
 /*description*/
+
 .new_saga{
     font-size: 14px;   /*en medidas em no coinciden los tamaños*/
     font-weight: 500;
     margin-bottom: var(--spacing-12);
 }
 
+#new{
+    font-family:var(--base-font) ;
+}
+
 .new_name{
 
     color: var(--dark-solid);
+    font-weight: 700;
 }
 
 .new_price{

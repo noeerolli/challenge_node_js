@@ -44,11 +44,12 @@
     </header>
    
     <main class="container">
+
         <aside id="shop_search">
             <div>
                     
                 <h3 class="search_title">BUSCAR</h3>
-                <input type="text" class="search_input lg_input" name="search" placeholder="item o categoria">   
+                <input type="text" class="search_input lg_input" name="search" placeholder=" item o categoria">   
                     
             </div>
             <div>
@@ -61,26 +62,35 @@
             <div>
                 <h3 class="search_title">PRECIO</h3>
                 <div id="price_min_max" class="search_input">
-                    <label for="min" class="min_max_label">MIN</label>
-                    <input class="min-max" type="number" name="min" id="" value="">
-                    <label for="max" class="min_max_label"> - MAX</label>
-                    <input class="min-max" type="number" name="max" id="" value="">
+                    <div class="min_max_input">
+                        <label for="min" class="min_max_label">MIN</label>
+                        <input class="min-max" type="number" name="min" id="" value="">
+                    </div>
+                    <div class="min_max_input">
+                        <label for="max" class="min_max_label"> - MAX</label>
+                        <input class="min-max" type="number" name="max" id="" value="">
+                    </div>
                 </div>
                 
             </div> 
             <div id="search_filter">
                 <h3  class="search_title">FILTRAR</h3>
-                <div>
-                    <label for="new">NUEVOS</label>    
-                    <input type="checkbox" name="new" id="" value="">
+                <div class="filter">
+                    <input type="checkbox" name="new" id="" value="" class="filter_box">
+                    <label for="new" class="filter_options">NUEVOS</label>      
                 </div>
-                
-                <label for="sale">OFERTAS</label>
-                <input type="checkbox" name="sale" id="" value="">
-                <label for="special_ed">EDICIÓN ESPECIAL</label>
-                <input type="checkbox" name="special_ed" id="" value="">
-                <label for="fav">FAVORITOS</label>
-                <input type="checkbox" name="fav" id="" value="">
+                <div class="filter">
+                    <input type="checkbox" name="sale" id="" value="" class="filter_box">
+                    <label for="sale" class="filter_options">OFERTAS</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name="special_ed" id="" value="" class="filter_box">
+                    <label for="special_ed" class="filter_options">EDICIÓN ESPECIAL</label>
+                </div>
+                <div class="filter">
+                    <input type="checkbox" name="fav" id="" value="" class="filter_box">
+                    <label for="fav" class="filter_options">FAVORITOS</label>
+                </div>
                 
             </div> 
                       
@@ -229,15 +239,13 @@
                 </li> 
             </ul>
         </section>
-
-        
+  
         <section>
             <!--selector de paginas-->
         </section>
 
-
-
     </main>
+
     <footer>
         <section id="nav_footer">
             <nav>
