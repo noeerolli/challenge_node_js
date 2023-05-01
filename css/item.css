@@ -1,0 +1,86 @@
+
+h2, h3{
+    font-weight: 700;
+}
+
+
+h3{
+    font-size: var(--font-jumbo);
+
+}
+
+.item{
+    
+    display: flex;
+    align-items: center;
+    margin-top: var(--spacing-68);
+   
+}
+
+.item_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--spacing-68);
+    
+    
+}
+
+.item_saga{
+    font-size: var(--font-small);
+}
+
+.funko_datail{
+    font-size: var(--font-large);
+}
+
+.item_price{
+    font-size: var(--font-jumbo);
+}
+
+.funko-payment{
+    font-size: 14px;
+    font-weight: 700;
+    color:var(--secondary-solid);
+}
+
+.a_item{
+    font-family: var(--base-font);
+    font-size: 14px;
+}
+
+.add_sub_container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.6em;
+}
+
+
+.add_sub{
+    height: 2.2em;
+    width: 2.2em;
+    background-color: #4F4F4F;
+    color: var(--light-font-solid);
+    border: none;
+    font-size: var(--font-medium);
+    
+    
+}
+
+.add_sub_number{
+    height: 3.4em;
+    width: 3.8em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.add_cart{
+    height: 2.2em;
+    margin-left: 1em;
+    width: 18em;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    border: none;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+   
+}

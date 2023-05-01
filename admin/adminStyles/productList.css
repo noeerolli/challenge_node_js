@@ -1,0 +1,48 @@
+#list_container{
+    min-height: 440px;
+    
+}
+
+#list_search{
+    max-width: 1200px; 
+    margin-top: 3.7em;
+}
+
+#list_top{
+    display: flex;
+    max-width: 1200px;
+    margin-top: 3.7em;  
+}
+
+#list{
+    max-width: 1200px;
+    margin-top: 3.7em;
+    background-color: aquamarine; 
+    margin-left: 2.5em;
+}
+
+.list_title_container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 4fr 1fr 1fr ;
+    margin-bottom: 1em;
+}
+
+.list_details{
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr 4fr 1fr 1fr ; 
+    grid-template-rows: 2.5em;
+    margin-top: 1em;
+    align-items: center;
+    
+}
+
+.list_details > p{
+    margin-bottom: 0;
+}
+
+.list_icon{
+    height: 2.5em;
+    width: 2.2em;
+    margin: auto;
+}
+

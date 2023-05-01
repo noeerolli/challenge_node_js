@@ -17,6 +17,9 @@ html{
     display: flex;
     flex-direction: row;
     margin-top: var(--spacing-68);
+    margin-left: 11em;
+    margin-right: 11em;
+
 }
 
 h3{
@@ -25,18 +28,7 @@ h3{
     margin-bottom: 16px;
 }
 
-#shop_search{
-    width: 367px;
-    font-weight: 500;  
-}
-
-
-#shop_articles > ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
-}
+/*Funkos*/
 
 .shop_li{
     margin-left: 2.5em;
@@ -49,10 +41,16 @@ h3{
 }
 
 .shop_item{
-    height: 51em;
     width: 30em;
-    position: relative;
 }
+
+/*Aside*/
+
+#shop_search{
+    width: 367px;
+    font-weight: 500;  
+}
+
 
 .search_title{
    
@@ -127,40 +125,14 @@ h3{
 }
 
 
-/*funkos*/
 
-.shop_item_info{
-    margin-bottom: var(--spacing-12);
-}
 
-.funko_saga{
-    font-size: 14px;
-}
 
-.funko_name{
-    font-size: 18px;
-}
 
-.funko_price{
-    font-size: 16px;
-}
 
-.funko_payment{
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--secondary-solid);
-}
 
-#box_new{
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: var(--primary-solid);
-    width: 96px;
-    height: 30px;
-    font-size: var(--font-small);
-    color: var(--light-font-solid);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+
+
+
+

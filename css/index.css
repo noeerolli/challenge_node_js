@@ -69,6 +69,11 @@ header, footer{
     color: var(--light-font-solid);
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
 nav{
@@ -82,7 +87,6 @@ nav{
     padding-right: 10.1em;
       
 }
-
 
 
 #nav_ul{
@@ -128,13 +132,26 @@ ul, ol{
 
 
 
-.container{
-    display: flex;
-    flex-direction: column;
-    margin-left: 11em;
-    margin-right: 11em;
-    justify-content: center;
+h2{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
 }
+
+
+
+h3{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    width: 441px;
+    margin-bottom: var(--spacing-8);  
+}
+
+h4{
+    font-size: 18px;
+}
+
+
+/*Header*/
 
 #nav-logo{
     display: flex;
@@ -187,6 +204,8 @@ ul, ol{
     height: 47px;
 }
 
+/*Main articles*/
+
 #home_funkos{
    display: flex;
    flex-direction: column;
@@ -225,75 +244,60 @@ ul, ol{
    
 }
 
-h2{
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-}
-
-#new > h2{              
-    margin-bottom: 60px;
-}
-
-h3{
-    font-family: var(--alternative-font);
-    font-size: var(--font-display);
-    width: 441px;
-    margin-bottom: var(--spacing-8);  
-}
-
-h4{
-    font-size: 18px;
-}
 
 
-/*new section*/
+/*New articles*/
 
-#new_articles{
+.shop_art_container{
     display: flex;
     justify-content: center;
 }
 
-.img_new{
-    width: 360px;
+.shop_articles > ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+
+.shop_articles > h2{              
+    margin-bottom: 60px;
+}
+
+.shop_img{
+    width: 360px; 
     height: auto;
 }
 
-#ul_new{
-   display: flex;
+.shop_item{
+    height: 51em;
+    width: 36em;
+    position: relative;
 }
 
-/*description*/
 
-.new_saga{
-    font-size: 14px;   /*en medidas em no coinciden los tamaños*/
-    font-weight: 500;
+.shop_item_info{
     margin-bottom: var(--spacing-12);
 }
 
-#new{
-    font-family:var(--base-font) ;
+.funko_saga{
+    font-size: 14px;
 }
 
-.new_name{
-
-    color: var(--dark-solid);
+.funko_name{
+    font-size: 18px;
     font-weight: 700;
 }
 
-.new_price{
-    font-size: 18px;
-    margin-top: var(--spacing-12);
-    margin-bottom: var(--spacing-12);
+.funko_price{
+    font-size: 16px;
 }
 
-.new_cuota{
+.funko_payment{
     font-size: 12px;
     font-weight: 700;
     color: var(--secondary-solid);
-}
-
-.new_card{
-    position: relative;
 }
 
 #box_new{
@@ -311,12 +315,12 @@ h4{
 }
 
 
-/*footer*/
+
+/*Footer*/
 
 footer{
     margin-top: var(--spacing-68);
-    height: 300px;
-      
+    height: 300px;  
 }
 
 footer > section{
@@ -338,5 +342,12 @@ footer > section{
     font-family: var(--alternative-font);
     font-size: 2em;
 }
+
+
+
+
+
+
+
 
 
