@@ -1,0 +1,11 @@
+
+
+#create_txt_area{
+    height: 195px;
+    width: 828px;
+    border: 1px solid var(--dark-solid);
+    border-radius: 4px;
+    padding: 1em;
+    font-size: var(--font-medium);
+    margin-bottom: 36px;
+}

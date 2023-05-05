@@ -164,7 +164,7 @@ h4{
     background-image: url(../img/funkos-banner.webp);
     background-size: cover;
     width: 100%;
-    height: 388px;
+    height: 38vh;
     margin-bottom: 10em;
     
 }
@@ -245,12 +245,12 @@ h4{
 }
 
 
-
 /*New articles*/
 
 .shop_art_container{
     display: flex;
     justify-content: center;
+    margin-bottom: var(--spacing-68);
 }
 
 .shop_articles > ul {
@@ -317,7 +317,7 @@ h4{
 
 
 /*Footer*/
-
+/*
 footer{
     margin-top: var(--spacing-68);
     height: 300px;  
@@ -342,12 +342,46 @@ footer > section{
     font-family: var(--alternative-font);
     font-size: 2em;
 }
+*/
 
 
 
+footer{
+    height: 300px; 
+    display: flex; 
+    flex-direction: column;
+    justify-self: flex-end;
+    justify-content: space-between;
+    /*
+    position: absolute;
+    right: 0;
+    left: 0;*/
+     
+}
 
 
 
+.nav_li{
+
+    margin-top: 1em;
+
+}
+
+
+#nav_footer{
+    margin-top: var(--spacing-68);
+}
+
+#rights{
+    display: flex;
+    justify-content: center;
+    height:20px;
+    font-family: var(--alternative-font);
+    font-size: 2em;
+    align-items: flex-end;
+    margin-bottom: 1em;
+    
+}
 
 
 

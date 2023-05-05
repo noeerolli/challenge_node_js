@@ -1,0 +1,164 @@
+
+
+
+.container{
+    font-family: var(--base-font);
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.admin_article{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.6em;
+}
+
+
+.admin_title{
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 700;
+    margin-top: 36px;
+}
+
+
+.admin_txt{
+    font-family: var(--base-font);
+    font-size: var(--font-large);
+    margin-right: 0.5em;
+}
+
+.adm_txt_light{
+    font-weight: 300;
+}
+
+.admin_input{
+    font-size: var(--font-medium);
+    padding-left: 0.5em;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    margin-right: 56px;
+}
+
+.admin_input_s{
+    width: 55px;
+
+}
+
+.admin_input_m{
+    width: 209px;
+
+}
+
+.admin_input_l{
+    width: 130px;
+}
+
+.admin_input_xl{
+    width: 295px;
+}
+
+
+.admin_select{
+    width: 243px;
+    height: 44px;
+    border: 2px solid var(--dark-bg-solid);
+    border-radius: 6px;
+    font-size: small;
+    font-size: 2em;
+    margin-right: 5.3em;
+}
+
+
+#admin_txt_area{
+    height: 195px;
+    width: 828px;
+    border: 1px solid var(--dark-solid);
+    border-radius: 4px;
+    padding: 1em;
+    font-size: var(--font-medium);
+    margin-bottom: 36px;
+}
+
+.choose_files_btn{
+    width: 125px;
+    height: 25px;
+    border: 1px solid rgba(48, 52, 63, 0.7);
+    border-radius: 3px;
+    font-size: 1.4em;
+}
+
+.files_article > p{
+    margin-bottom: 0;
+}
+
+.files_btn_txt{
+    font-size: 1.4em;
+    margin-left: 0.4em;
+}
+
+.red_btn{
+    width: 175px;
+    height: 44.33px;
+    margin-right: 35px;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#admin_txt_area{
+    height: 195px;
+    width: 828px;
+    border: 1px solid var(--dark-solid);
+    border-radius: 4px;
+    padding: 1em;
+    font-size: var(--font-medium);
+    margin-bottom: 36px;
+}
+
+
+/*edit page*/
+
+.edit_pic{
+    height: 150px;
+    width: 150px;
+    margin-right: 24px;
+    
+}
+
+.edit_pic > img{
+    height: 150px;
+    width: 150px;
+    border-bottom: 1px solid var( --primary-solid);
+    
+}
+
+.edit_pic > div{
+    display: flex;
+    justify-content:center;
+    font-family: var(--alternative-font);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn_edit{
+    margin-top: 3.6em;
+}
+
+/*login*/
+
+.login_article{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 3.6em;
+}

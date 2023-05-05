@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/admin/adminStyles/admin.css">
     <link rel="stylesheet" href="/admin/adminStyles/productList.css">
 </head>
 
@@ -37,21 +38,21 @@
 
     <main class="container">
         <div id="list_container">
-            <article id="list_search">
-                <img src="/img/icons/search_icon.svg" alt="search icon">
-                <input type="text">
-            </article>
-            <article id="product_list">
-                <div id="list_top">
-                    <p>LISTADO DE PRODUCTOS</p>
+            <section id="list_search">
+                <img src="/img/icons/search_icon.svg" class="search_icon" alt="search icon">
+                <input class="search_txt" type="text" placeholder="código, nombre o categoría">
+            </section>
+            <section id="product_list">
+                <article id="list_top">
+                    <p class="admin_title">LISTADO DE PRODUCTOS</p>
                     <div class="add_section">
                         <a href="" class="add_txt">AGREGAR</a>
-                        <a href="" class="add_btn"></a>
+                        <a href="" class="add_btn">+</a>
                     </div>  
-                </div>
+                </article>
 
 
-                <div id="list">
+                <article id="list">
                     <div class="list_title_container">
                         <p class="list_title">ID</p>
                         <p>Código</p>
@@ -74,9 +75,9 @@
                         <img src="/img/icons/edit_pencil.svg" class="list_icon" alt="edit">
                         <img src="/img/icons/delete_trash.svg"  class="list_icon" alt="delete">
                     </div>
-                </div>
+                </article>
             
-            </article>
+            </section>
         </div>
     </main>
 
@@ -104,9 +105,11 @@
             </nav>
 
         </section>
+        
         <p id="rights">All rights reserved 2023 - Funkoshop &copy;</p>
+        
+       
     </footer>
-    
     
 </body>
 </html>
