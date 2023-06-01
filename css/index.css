@@ -33,7 +33,7 @@
     --font-large: 2.4em;
     --font-medium: 1.8em;
     --font-small: 1.6em;
-    --font-xsmall: 1.2em;
+    --font-xsmall: 1.4em; /*revisar*/
 
     /*Spacings*/
 
@@ -41,9 +41,13 @@
     --spacing-68: 6.8rem;
     --spacing-36: 3.6rem;
     --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem; /*revisar*/
+    --spacing-20: 2rem;    /*revisar*/
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+
+    
 
 
 
@@ -73,29 +77,7 @@ header, footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-
-nav{
-    width: 100%;
-    height: 144px;
-    display: flex;
-    background-color: var(--dark-bg-solid);
-    align-items: center;
-    justify-content: space-between; 
-    padding-left: 10.1em;
-    padding-right: 10.1em;
-      
-}
-
-
-#nav_ul{
-    display: flex;  
-    align-items: center;
-}
-
-.nav-li{
-    margin-right: 2em;
+    /*max-width: 1200px;*/
 }
 
 a{
@@ -106,20 +88,6 @@ a{
 }
 
 
-.a_button{
-    width: 290px;
-    height: 65px;
-    font-family: var(--base-font);
-    font-size: 2.4em;
-    border-radius: 50px;
-    background-color: #30343F;
-    color:#FAFAFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
 .button_link{
     font-size: var(--font-medium);
 }
@@ -128,6 +96,7 @@ a{
 
 ul, ol{
     list-style: none;
+    margin: 0;
 }
 
 
@@ -151,18 +120,94 @@ h4{
 }
 
 
-/*Header*/
+img{
+    width: 100%;
+}
+
+
+/*HEADER*/
+
+nav{
+    width: 100%;
+    height: 144px;
+    display: flex;
+    background-color: var(--dark-bg-solid);
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 10.1em;
+    padding-right: 10.1em;
+      
+}
+
+#nav_ul{
+    display: flex;  
+    align-items: center;
+    gap: var(--spacing-20);
+    margin-bottom: 0;
+    position: relative;
+}
+
 
 #nav-logo{
     display: flex;
     align-self: center;
+    max-width: 300px;
 
 }
+
+
+.nav_link{
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    
+}
+
+
+
+.nav_link:hover{
+    background-color: var(--primary-900);
+}
+
+.with-icon{
+    display: flex;
+    align-items: center;
+    gap:var(--spacing-8);
+}
+
+.with-submenu:hover .submenu{
+    display: block;
+}
+
+.submenu{
+    display: none;
+    background-color: var(--dark-bg-solid);
+    width: 300px;
+    position: absolute;
+    z-index: 2;
+    padding-left: 0;
+    
+}
+
+.submenu_link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu_link:hover{
+    background-color: var(--primary-900);
+}
+
+
+/*HERO*/
 
 #banner{
     
     background-image: url(../img/funkos-banner.webp);
     background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     height: 38vh;
     margin-bottom: 10em;
@@ -173,7 +218,7 @@ h4{
 #banner_detail{
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px) brightness(.9);
     height: 100%;
     display: flex;
     
@@ -186,7 +231,7 @@ h4{
     margin-left:110px;
 }
 
-#new_in{
+#banner_new_in{
     font-size: var(--font-jumbo);
 }
 
@@ -202,9 +247,17 @@ h4{
     color: var(--dark-solid);
     width: 211px;
     height: 47px;
+    transition: all .3s ease-in-out;
 }
 
-/*Main articles*/
+#banner_button:hover{
+    background-color: var(--primary-900);
+    color: var(--light-font-solid);
+}
+
+
+
+/*MAIN ARTICLES*/
 
 #home_funkos{
    display: flex;
@@ -218,6 +271,7 @@ h4{
 }
 
 .home_art_description{
+    font-family: var(--alternative-font);
     font-size: var(--font-large);
     margin-bottom: var(--spacing-28)
 }
@@ -230,10 +284,29 @@ h4{
 .description{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    
+    justify-content: center; 
     width: 64.5em;
     height: 29.7em;
+}
+
+
+.a_button{
+    width: 290px;
+    height: 65px;
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    border-radius: 50px;
+    background-color: #30343F;
+    color:#FAFAFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background .3sz
+    
+}
+
+.a_button:hover{
+    background-color: var(--primary-900)
 }
 
 .line{
@@ -245,7 +318,7 @@ h4{
 }
 
 
-/*New articles*/
+/*SLIDER - NEW ARTICLES*/
 
 .shop_art_container{
     display: flex;
@@ -257,13 +330,34 @@ h4{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
+    gap: var(--spacing-28);
 }
 
 
 .shop_articles > h2{              
     margin-bottom: 60px;
 }
+
+.shop_img_container{
+    display: flex;
+}
+
+.shop_img_container img{
+    animation: fade .7s;
+}
+
+.img_back{
+    display: none;
+}
+
+.shop_img_container:hover .img_back{
+    display: block;
+}
+
+.shop_img_container:hover .img_front{
+    display: none;
+}
+
 
 .shop_img{
     width: 360px; 
@@ -274,6 +368,7 @@ h4{
     height: 51em;
     width: 36em;
     position: relative;
+    padding: var(--spacing-16);
 }
 
 
@@ -314,36 +409,7 @@ h4{
     align-items: center;
 }
 
-
-
-/*Footer*/
-/*
-footer{
-    margin-top: var(--spacing-68);
-    height: 300px;  
-}
-
-footer > section{
-    height: 250px;
-    display: flex;
-    align-items: center;
-    
-}
-
-.nav_li{
-    margin-top: 1em;
-}
-
-
-#rights{
-    display: flex;
-    justify-content: center;
-    height:20px;
-    font-family: var(--alternative-font);
-    font-size: 2em;
-}
-*/
-
+/*FOOTER*/
 
 
 footer{
@@ -352,19 +418,22 @@ footer{
     flex-direction: column;
     justify-self: flex-end;
     justify-content: space-between;
-    /*
-    position: absolute;
-    right: 0;
-    left: 0;*/
      
 }
 
 
 
-.nav_li{
+.footer_li{
+    padding: 1em;
+    transition: background .3s ease-in-out;
+}
 
-    margin-top: 1em;
+.footer_li:hover{
+    background-color: var(--primary-900);
+}
 
+.footer_li:hover{
+    background-color: var(--primary-900);
 }
 
 
@@ -385,3 +454,11 @@ footer{
 
 
 
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

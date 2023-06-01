@@ -25,7 +25,7 @@
                 </a>
             </picture>
             <ul id="nav_ul">
-                 <li class="nav-li">
+                 <li class="nav-li nav_link">
                     <a href="" class="a_nav">SALIR</a>
                 </li>
             </ul>
@@ -34,48 +34,57 @@
 
     </header>
 
-    <main class="container">
-        <section>
-            <p class="admin_title">CREAR NUEVO ITEM</p>
-        <section>
-        <section>
-            <article class="login_article">
-                <label for="email" class="admin_txt">Email:</label>
-                <input  class="admin_input admin_input_m" name="create_sku" type="text" placeholder="micorreo@gmail.com">
-                <label for="pass" class="admin_txt">Contraseña:</label>
-                <input class="admin_input admin_input_m" type="password"  name="pass" placeholder="***********">
-            </article>
-            <article class="admin_article">
-                <button class="red_btn">Ingresar</button>
-                <input class="admin_input" name="remember_me" type="checkbox">
-                <label for="remember_me" class="admin_txt">Recordarme</label>
-            </article>
-        </section>
-
+    <main id="log_container" class="container">
+        <div id="login_container">
+            <section>
+                <p class="admin_title">INGRESAR A MI CUENTA</p>
+            <section>
+            <section>
+                <article class="data_container">
+                    <div class="data_inputs">
+                        <label for="email" class="admin_txt">Email:</label>
+                        <input  class="self_data_input admin_input_m" name="create_sku" type="text" placeholder="micorreo@gmail.com">
+                    </div>
+                    <div class="data_inputs">
+                        <label for="pass" class="admin_txt">Contraseña:</label>
+                        <input class="self_data_input admin_input_m" type="password"  name="pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                    </div>
+                </article>
+                <div class="login_center_art">
+                    <article class="admin_article">
+                        <button class="red_btn">Ingresar</button>
+                        <input id="remember_me" class="admin_input" name="remember_me" type="checkbox">
+                        <label for="remember_me" class="check_txt">Recordarme</label>
+                    </article>
+                    <article class="admin_article forgot_art data_container">
+                        <a class="admin_link" href="">Olvidé mi contraseña</a>
+                    </article>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
         <section id="nav_footer">
             <nav>
                 <ul>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/shop.html">SHOP</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/register.html">REGISTRARSE</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/login.html">LOGIN</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/contact.html">CONTACTO</a>
                     </li>
                 </ul>
                 <picture id="footer_logo">
-                    <img src="/img/branding/isotype.svg" alt="logo Funkoshop">
+                    <img src="../img/branding/isotype.svg" alt="logo Funkoshop">
                 </picture>
             </nav>
-
         </section>
         
         <p id="rights">All rights reserved 2023 - Funkoshop &copy;</p>

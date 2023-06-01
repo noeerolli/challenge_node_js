@@ -22,22 +22,33 @@
         <nav>
             <picture>
                 <a  href="/index.html">
-                    <img id="nav-logo" src="/img/branding/logo_light_horizontal.svg" alt="Funkoshop logo">
+                    <img id="nav-logo" src="../img/branding/logo_light_horizontal.svg" alt="Funkoshop logo">
                 </a>
             </picture>
             <ul id="nav_ul">
-                 <li class="nav-li">
-                    <a href="" class="a_nav">SHOP</a>
+                <li class=" nav_li with-submenu">
+                    <a class="nav_link with-icon" href="">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu_nav">
+                            <a href="" class="submenu_link">Funkos</a>
+                        </li>
+                        <li class="submenu_nav">
+                            <a href="" class="submenu_link">Remeras</a>
+                        </li>
+                        <li class="submenu_nav">
+                            <a href="" class="submenu_link">Llaveros</a>
+                        </li>
+                    </ul>
                 </li>
-                <li class="nav-li">
-                    <a href="" class="a_nav">CONTACTO</a>
+                <li>
+                    <a class="nav_link" href="" class="a_nav">CONTACTO</a>
                 </li>
-                <li class="nav-li">
-                    <a href="" class="a_nav">LOGIN</a>
+                <li>
+                    <a class="nav_link" href="" class="a_nav">LOGIN</a>
                 </li>
                 <li class="nav-li">
                     <a href="">
-                        <img src="/img/icons/cart-icon.svg" alt="cart icon">
+                        <img src="../img/icons/cart-icon.svg" alt="cart icon">
                     </a>
                 </li>
             </ul>
@@ -135,26 +146,28 @@
         <section id="nav_footer">
             <nav>
                 <ul>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/shop.html">SHOP</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/register.html">REGISTRARSE</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/login.html">LOGIN</a>
                     </li>
-                    <li class="nav_li">
+                    <li class="footer_li">
                         <a href="./pages/contact.html">CONTACTO</a>
                     </li>
                 </ul>
                 <picture id="footer_logo">
-                    <img src="/img/branding/isotype.svg" alt="logo Funkoshop">
+                    <img src="../img/branding/isotype.svg" alt="logo Funkoshop">
                 </picture>
             </nav>
-
         </section>
+        
         <p id="rights">All rights reserved 2023 - Funkoshop &copy;</p>
+        
+       
     </footer>
     
 </body>

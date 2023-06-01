@@ -19,6 +19,7 @@ html{
     margin-top: var(--spacing-68);
     margin-left: 11em;
     margin-right: 11em;
+    
 
 }
 
@@ -28,10 +29,11 @@ h3{
     margin-bottom: 16px;
 }
 
-/*Funkos*/
+/*SHOP ARTICLES*/
+
 
 .shop_li{
-    margin-left: 2.5em;
+    flex: 1 1 clamp(250px, 30%, 30%);
 }
 
 
@@ -44,7 +46,7 @@ h3{
     width: 30em;
 }
 
-/*Aside*/
+/*ASIDE*/
 
 #shop_search{
     width: 367px;

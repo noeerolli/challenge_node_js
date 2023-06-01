@@ -25,6 +25,7 @@ footer{
     font-size: var(--font-display);
     font-weight: 700;
     margin-top: 36px;
+    margin-bottom: var(--spacing-36);
 }
 
 
@@ -156,9 +157,89 @@ footer{
 
 /*login*/
 
-.login_article{
+#login_container{
+    width: 60em;
+}
+
+#log_container{
+    align-items: center;
+}
+
+.data_container{
     display: flex;
     flex-direction: column;
-    
+    width: 38em;
+}
+
+.data_inputs{
+    flex-direction: row;
     margin-bottom: 3.6em;
+    position: relative;
+} 
+
+#remember_me{
+    margin-right: 8px;
+    height: 16px;
+    width: 16px;
+    border: 2px solid var(--dark-solid);
+}
+
+.forgot_art{
+    justify-content: center;
+}
+.admin_link{
+    color: var(--secondary-solid);
+    font-size: var(--font-xsmall);
+    
+}
+
+.login_center_art{
+    align-items: center;
+}
+
+.self_data_input{
+    font-size: var(--font-medium);
+    padding-left: 0.5em;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    position: absolute;
+    right: 0; 
+   
+}
+
+.check_txt{
+    font-size: var(--font-medium);
+}
+
+/*REGISTER*/
+
+.register_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#data_container{
+    width: 60em;
+}
+
+.register_data{
+    display: flex;
+    flex-direction: column;
+    width: 50em;
+}
+
+.accept_label{
+font-size: var(--font-medium);
+}
+
+#register_span{
+    font-size: var(--font-xsmall);
+}
+
+.register_description{
+    font-family: var(--alternative-font);
+    font-size: var(--font-xlarge);
+    font-weight: 500;
+    margin-bottom: var(--spacing-36);
 }
